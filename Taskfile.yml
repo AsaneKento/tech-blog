@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  default:
+    desc: show commands
+    cmds:
+      - task -l --sort none
+
+  create:
+    desc: 記事の新規作成
+    cmds:
+      - npm run create
