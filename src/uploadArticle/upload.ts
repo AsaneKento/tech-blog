@@ -7,7 +7,6 @@ import { uploadMarkdown } from "./uploadMarkdown"
 async function uploadFiles(files: string[]): Promise<void> {
   for (const file of files) {
     if (!file) continue
-    console.log(process.env.R2_BUCKET_NAME)
 
     // Markdownファイルの処理
     if (file.endsWith(".md")) {
