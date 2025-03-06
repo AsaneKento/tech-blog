@@ -2,7 +2,7 @@ import * as crypto from "node:crypto"
 import * as fs from "node:fs"
 import * as path from "node:path"
 
-const ARTICLE_DIR = "articles"
+const ARTICLE_DIR = "tech-blog"
 const TEMPLATE_PATH = path.join(__dirname, "template.md")
 
 /**

@@ -7,6 +7,7 @@ dist/
 # Environment variables
 .env
 .env.*
+!.env.sample
 
 # Editor directories and files
 .idea/
