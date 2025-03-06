@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "create": "ts-node src/create.ts"
+    "create": "ts-node src/createArticle/create.ts",
+    "upload": "ts-node src/uploadArticle/upload.ts",
+    "format": "npx @biomejs/biome format --write",
+    "lint": "npx @biomejs/biome lint --write",
+    "check": "npx @biomejs/biome check --write"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
@@ -11,5 +15,10 @@
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.758.0",
+    "dotenv": "^16.4.7",
+    "gray-matter": "^4.0.3"
   }
 }

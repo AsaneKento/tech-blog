@@ -10,3 +10,8 @@ tasks:
     desc: 記事の新規作成
     cmds:
       - npm run create
+
+  check:
+    desc: linter & formatter
+    cmds:
+      - npm run check
