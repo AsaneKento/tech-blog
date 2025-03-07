@@ -56,7 +56,7 @@ jobs:
         uses: tj-actions/changed-files@v45
         with:
           files: |
-            tech-blog/**
+            tech/**
             images/**
 
       - name: Upload to Cloudflare R2
