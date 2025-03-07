@@ -1,5 +1,6 @@
 import "dotenv/config"
-import { uploadMarkdown } from "./uploadMarkdown"
+import { uploadArticleList } from "./utils/uploadArticleList"
+import { uploadMarkdown } from "./utils/uploadMarkdown"
 
 /**
  * 変更ファイルの処理
@@ -16,8 +17,9 @@ async function uploadFiles(files: string[]): Promise<void> {
     // TODO: 画像ファイルの処理
   }
 
-  // TODO: 記事のリスト更新
-  console.log(`🚀 Created new articles!!`)
+  await uploadArticleList("./tech")
+
+  console.log("🚀 Created new articles!!")
 }
 
 /**

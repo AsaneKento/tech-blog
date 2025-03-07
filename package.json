@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "create": "ts-node src/createArticle/create.ts",
-    "upload": "ts-node src/uploadArticle/upload.ts",
+    "create": "ts-node src/createArticle/create.ts ./tech",
+    "upload": "ts-node src/upload/upload.ts",
     "format": "npx @biomejs/biome format --write",
     "lint": "npx @biomejs/biome lint --write",
     "check": "npx @biomejs/biome check --write"
