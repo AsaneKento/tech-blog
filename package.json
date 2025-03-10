@@ -10,7 +10,7 @@
     "check": "npx @biomejs/biome check --write"
   },
   "devDependencies": {
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.13.10",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
